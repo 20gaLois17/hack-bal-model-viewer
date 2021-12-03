@@ -26,7 +26,7 @@ export default function Edit( { attributes, setAttributes } ) {
                     render={ ( { open } ) => (
                         model ?
                         <div>
-                            <div>{ model.url }</div>
+                            <div>{ model.filename }</div>
                             <Button onClick={ () => setAttributes( { model: '' } ) }
                                     className="button is-small">{ __( 'Model entfernen' , 'bal-model-viewer' ) }
                             </Button>
