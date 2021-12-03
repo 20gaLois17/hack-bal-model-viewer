@@ -8,6 +8,7 @@ services:
     volumes:
       - ../src/bal-model-viewer:/var/www/html/wp-content/plugins/bal-model-viewer
       - ./config/.htaccess:/var/www/html/.htaccess 
+      - ./config/wp-config.php:/var/www/html/wp-config.php
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_NAME: "${DB_NAME}"
