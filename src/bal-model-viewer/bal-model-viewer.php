@@ -7,8 +7,6 @@
  * Text Domain: bal-model-viewer
  */
 
-// helper functions
-include plugin_dir_path( __FILE__) . './inc/helper.php';
 
 // Enqueue scripts and register blocks on the server
 add_action( 'init', 'bal_register_custom_blocks' );
